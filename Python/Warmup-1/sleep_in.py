@@ -1,4 +1,5 @@
 
+# this function return true if it is not weekday or we are on vacation
 def sleep_in(weekday, vacation):
 	return True if not weekday or vacation else False
 
