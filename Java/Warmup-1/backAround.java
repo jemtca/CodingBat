@@ -28,7 +28,8 @@ public class warmup1 {
 		s = o.backAround("Hello");
 		System.out.println(s);
 		
-		System.out.println(o.backAround("a"));
+		s = o.backAround("a");
+		System.out.println(s);
 		
 	}
 	
