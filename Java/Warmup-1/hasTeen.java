@@ -1,7 +1,7 @@
 
 public class warmup1 {
 
-	// this function return true if the numbers given are in range 13-19 inclusive
+	// this function return true if the given int values are in range 13-19 inclusive
 	public boolean hasTeen(int a, int b, int c) {
 		
 		boolean bool = false;

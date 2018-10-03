@@ -1,7 +1,7 @@
 
 public class warmup1 {
 
-	// this function return true if one of the two given numbers is "teen", but not both
+	// this function return true if one of the two given int values is "teen", but not both
 	// teen = range 13..19 inclusive
 	public boolean loneTeen(int a, int b) {
 		

@@ -1,5 +1,5 @@
 
-# this function return true if one of the two given numbers is "teen", but not both
+# this function return true if one of the two given values is "teen", but not both
 # teen = range 13..19 inclusive
 def lone_teen(a, b):
 	bool = False

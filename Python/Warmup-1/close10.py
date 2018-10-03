@@ -1,5 +1,5 @@
 
-# given two int numbers, the function returns the nearest number to the value 10
+# given two int values, the function returns the nearest number to the value 10
 # return 0 in the event of a tie
 def close10(a, b):
 	

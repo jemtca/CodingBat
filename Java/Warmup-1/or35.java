@@ -1,7 +1,7 @@
 
 public class warmup1 {
 
-	// this function return true if the given non-negative number is multiple of 3 or multiple or 5
+	// this function return true if the given non-negative int value is multiple of 3 or multiple or 5
 	public boolean or35(int n) {
 		
 		boolean b = false;

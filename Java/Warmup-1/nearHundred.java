@@ -1,7 +1,7 @@
 
 public class warmup1 {
 
-	// this function return true if the number given it is within 10 of 100 or 200
+	// this function return true if the given int value is within 10 of 100 or 200
 	public boolean nearHundred(int n) {
 		
 		return Math.abs(100 - n) <= 10 || Math.abs(200 - n) <= 10 ? true : false;

@@ -1,5 +1,5 @@
 
-# this function return true if the numbers given are in range 13-19 inclusive
+# this function return true if the given int values are in range 13-19 inclusive
 def has_teen(a,b,c):
 	
 	b = False

@@ -1,5 +1,5 @@
 
-# this function return true if one given int in positive and the other given int is negative,
+# this function return true if one given int value is positive and the other given int value is negative,
 # except if the parameter negative is true and both int are negative
 def pos_neg(a, b, negative):
 	bool = False
