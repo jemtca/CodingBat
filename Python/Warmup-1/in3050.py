@@ -1,7 +1,6 @@
 
 # this function return true if the two given int values are both in the range 30..40 inclusive,
 # or they are both in the range 40..50 inclusive
-
 def in3050(a, b):
 	bool = False
 
