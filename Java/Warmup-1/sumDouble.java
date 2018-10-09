@@ -3,7 +3,7 @@ public class warmup1 {
 
 	// this function return the sum of the two given int values
 	// if the two values are the same, return double their sum
-	public int sumDouble (int a, int b) {
+	public int sumDouble(int a, int b) {
 		
 		int i = 0;
 		
