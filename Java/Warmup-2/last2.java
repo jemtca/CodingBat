@@ -8,9 +8,9 @@ public class warmup2 {
 		int count = 0;
 		
 		if(str.length() > 2) {
-			String last2chars = str.substring(str.length() - 2);
-			for(int i = 0; i < str.length() - 2; i++) {
-				String s = str.substring(i, i + 2);
+			String last2chars = str.substring(str.length()-2);
+			for(int i = 0; i < str.length()-2; i++) {
+				String s = str.substring(i, i+2);
 				if(s.compareToIgnoreCase(last2chars) == 0)
 					count++;
 			}	

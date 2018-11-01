@@ -4,8 +4,8 @@ def alt_pairs(str):
 	s = ""
 
 	for x in range(0,len(str),4):
-		if x < len(str) - 1:
-			s = s + str[x] + str[x + 1]
+		if x < len(str)-1:
+			s = s + str[x] + str[x+1]
 		else:
 			s = s + str[x]
 

@@ -7,8 +7,8 @@ def double_x(str):
 
 	index = 0
 	for x in str:
-		if index < len(str) - 1 and x == 'x':
-			if str[index + 1] == 'x':
+		if index < len(str)-1 and x == 'x':
+			if str[index+1] == 'x':
 				b = True
 			else:
 				break

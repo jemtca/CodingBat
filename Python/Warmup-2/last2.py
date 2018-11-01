@@ -7,8 +7,8 @@ def last2(str):
 	if len(str) > 2:
 		last2chars = str[-2:]
 		i = 0
-		while i < len(str) - 2:
-			s = str[i] + str[i + 1]
+		while i < len(str)-2:
+			s = str[i] + str[i+1]
 			if s == last2chars:
 				count += 1
 			i += 1

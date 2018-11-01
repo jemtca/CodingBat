@@ -7,10 +7,10 @@ public class warmup2 {
   		String s = "";
 		
 		for (int i = 0; i < str.length(); i+=4) {
-			if (i < str.length() - 1)
-				s = s + str.substring(i, i + 1) + str.substring(i + 1, i + 2);
+			if (i < str.length()-1)
+				s = s + str.substring(i, i+1) + str.substring(i+1, i+2);
 			else
-				s = s + str.substring(i, i + 1);
+				s = s + str.substring(i, i+1);
 				
 		}
 				

@@ -4,8 +4,8 @@
 def no_triples(nums):
 	b = True
 
-	for x in range(0,len(nums) - 2):
-		if nums[x] == nums[x + 1] and nums[x + 1] == nums[x + 2]:
+	for x in range(len(nums)-2):
+		if nums[x] == nums[x+1] and nums[x+1] == nums[x+2]:
 			b = False
 
 	return b
