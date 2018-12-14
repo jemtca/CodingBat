@@ -1,6 +1,6 @@
 
-# given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element
-# both arrays will be length 1 or more
+# given 2 lists of ints, a and b, return true if they have the same first element or they have the same last element
+# both lists will be length 1 or more
 def common_end(a, b):
     bool = False
 

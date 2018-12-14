@@ -1,13 +1,13 @@
 
-# given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements
+# given 2 int lists, a and b, each length 3, return a new array length 2 containing their middle elements
 def middle_way(a, b):
-    x = [0, 0]
+    new_list = []
 
     if len(a) == 3 and len(b) == 3:
-        x[0] = a[1]
-        x[1] = b[1]
+        new_list.append(a[1])
+        new_list.append(b[1])
 
-    return x
+    return new_list
 
 print(middle_way([1, 2, 3], [4, 5, 6]))
 print(middle_way([7, 7, 7], [3, 8, 0]))

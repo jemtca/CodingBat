@@ -1,6 +1,6 @@
 
-# given an array of ints, return true if 6 appears as either the first or last element in the array
-# the array will be length 1 or more
+# given a list of ints, return true if 6 appears as either the first or last element in the list
+# the list will be length 1 or more
 def last_first6(nums):
     b = False
 

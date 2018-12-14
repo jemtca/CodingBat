@@ -1,7 +1,6 @@
 
-#
-# given an int array length 3, if there is a 2 in the array immediately followed by a 3, set the 3 element to 0
-# return the changed array
+# given an int list length 3, if there is a 2 in the list immediately followed by a 3, set the 3 element to 0
+# return the changed list
 def fix23(nums):
 
     if len(nums) == 3:
