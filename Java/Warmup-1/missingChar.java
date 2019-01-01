@@ -6,7 +6,7 @@ public class warmup1 {
 		
 		String s = "";
 		
-		if (n >= 0 && n < str.length()) {
+		if (n >= 0 && n <= str.length()) {
 			if (n == 0) // n = 0
 				s = str.substring(1);
 			else if (n == str.length()) // n = last position
