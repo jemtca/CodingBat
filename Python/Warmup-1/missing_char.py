@@ -4,7 +4,7 @@ def missing_char(str, n):
 	
 	s = ""
 
-	if n >= 0 and n < len(str):
+	if n >= 0 and n <= len(str):
 		if n == 0: # n == 0
 			s = str[1:]
 		elif n == len(str) - 1: # n == last character
