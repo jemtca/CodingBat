@@ -2,7 +2,7 @@
 public class array2 {
 
 	// return the number of even ints in the given array
-	public int countEvens (int[] nums) {
+	public int countEvens(int[] nums) {
 		
 		int count = 0;
 		
