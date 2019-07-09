@@ -29,7 +29,11 @@ public class array3 {
 		count = 0;
 		index5 = new int[length];
 		for (int i = 0; i < nums.length; i++) {
-			if (i > 0 && nums[i] == 5 && nums[i - 1] != 4) {
+			if (i == 0 && nums[i] == 5) {
+				index5[count] = i;
+				count++;
+			}
+			else if (i > 0 && nums[i] == 5 && nums[i - 1] != 4) {
 				index5[count] = i;
 				count++;
 			}
