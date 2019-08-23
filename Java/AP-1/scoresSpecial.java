@@ -21,8 +21,6 @@ public class ap1 {
 			}
 		}
 		
-		System.out.println("maxA: " + maxA + ", maxB: " + maxB);
-		
 		return maxA + maxB;
 		
 	}
