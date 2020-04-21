@@ -1,12 +1,12 @@
 
 # given a list of integers, return a list where each integer is multiplied by 2
-def doubling(nums):
-    new_numbers = []
+def doubling(list):
+    new_list = []
     
-    for x in nums:
-        new_numbers.append(x * 2)
+    for x in list:
+        new_list.append(x * 2)
 
-    return new_numbers
+    return new_list
 
 print(doubling([1, 2, 3]))
 print(doubling([6, 8, 6, 8, -1]))
