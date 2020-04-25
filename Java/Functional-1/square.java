@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class functional1 {
 
 	// given a list of integers, return a list where each integer is multiplied with itself
-	public List<Integer> rightDigit(List<Integer> nums) {
+	public List<Integer> square(List<Integer> nums) {
 		
 		nums.replaceAll(n -> n * n);
 		
@@ -22,9 +22,9 @@ public class functional1 {
 		List<Integer> l2 = Arrays.asList(6, 8, -6, -8, 1);
 		List<Integer> l3 = new ArrayList<Integer>();
 		
-		System.out.println(o.rightDigit(l1));
-		System.out.println(o.rightDigit(l2));
-		System.out.println(o.rightDigit(l3));
+		System.out.println(o.square(l1));
+		System.out.println(o.square(l2));
+		System.out.println(o.square(l3));
 
 	}
 

@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class functional1 {
 
 	// given a list of strings, return a list where each string has "y" added at its start and end
-	public List<String> rightDigit(List<String> strings) {
+	public List<String> moreY(List<String> strings) {
 		
 		strings.replaceAll(n -> "y" + n + "y");
 		
@@ -21,9 +21,9 @@ public class functional1 {
 		List<String> l2 = Arrays.asList("hello", "there");
 		List<String> l3 = Arrays.asList("yyayy");
 		
-		System.out.println(o.rightDigit(l1));
-		System.out.println(o.rightDigit(l2));
-		System.out.println(o.rightDigit(l3));
+		System.out.println(o.moreY(l1));
+		System.out.println(o.moreY(l2));
+		System.out.println(o.moreY(l3));
 
 	}
 
