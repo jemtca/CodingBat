@@ -12,8 +12,10 @@ def groupSum(start, nums, target):
         else:
             return False
 
+    # chosen
     if groupSum(start + 1, nums, target - nums[start]):
         return True
+    # not chosen
     if groupSum(start + 1, nums, target):
         return True
 

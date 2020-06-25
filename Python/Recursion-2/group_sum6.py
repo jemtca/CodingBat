@@ -3,10 +3,12 @@
 # however, with the additional constraint that all 6's must be chosen
 def group_sum6(start, nums, target):
     if start >= len(nums):
-        return (target == 0)
+        return target == 0
 
+    # chosen
     if group_sum6(start + 1, nums, target - nums[start]):
         return True
+    # not chosen
     if nums[start] != 6 and group_sum6(start + 1, nums, target):
         return True
 

@@ -17,10 +17,12 @@ public class recursion2 {
 			}
 		}
 		
+		// chosen
 		if (groupSum(start + 1, nums, target - nums[start])) {
 			return true;
 		}
 		
+		// not chosen
 		if (groupSum(start + 1, nums, target)) {
 			return true;
 		}

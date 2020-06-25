@@ -9,10 +9,12 @@ public class recursion2 {
 			return (target == 0);
 		}
 		
+		// chosen
 		if (groupSum6(start + 1, nums, target - nums[start])) {
 			return true;
 		}
 		
+		// not chosen
 		if (nums[start] != 6 && groupSum6(start + 1, nums, target)) {
 			return true;
 		}
