@@ -6,20 +6,16 @@ public class recursion2 {
 	public boolean groupSum6(int start, int[] nums, int target) {
 		
 		if (start >= nums.length) {
-			return (target == 0);
+			return target == 0;
+		} else {
+			// all 6's must be chosen
+			if (nums[start] == 6) {
+				return groupSum6(start + 1, nums, target - nums[start]);
+			} else {
+				// use item at start or not
+				return groupSum6(start + 1, nums, target - nums[start]) || groupSum6(start  + 1, nums, target);
+			}
 		}
-		
-		// chosen
-		if (groupSum6(start + 1, nums, target - nums[start])) {
-			return true;
-		}
-		
-		// not chosen
-		if (nums[start] != 6 && groupSum6(start + 1, nums, target)) {
-			return true;
-		}
-		
-		return false;
 		
 	}
 	

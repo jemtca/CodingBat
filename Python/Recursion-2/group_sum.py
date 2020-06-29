@@ -5,21 +5,11 @@
 # rather than looking at the whole array, our convention is to consider the part of the array starting at index start and continuing to the end of the array
 # the caller can specify the whole array simply by passing start as 0
 def groupSum(start, nums, target):
-
     if start >= len(nums):
-        if target == 0:
-            return True
-        else:
-            return False
-
-    # chosen
-    if groupSum(start + 1, nums, target - nums[start]):
-        return True
-    # not chosen
-    if groupSum(start + 1, nums, target):
-        return True
-
-    return False
+        return target == 0
+    else:
+        # use item at start or not
+        return groupSum(start + 1, nums, target - nums[start]) or groupSum(start + 1, nums, target)
 
 print(groupSum(0, [2, 4, 8], 10))
 print(groupSum(0, [2, 4, 8], 14))

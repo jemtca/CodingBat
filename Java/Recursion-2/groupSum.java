@@ -8,26 +8,12 @@ public class recursion2 {
 	// the caller can specify the whole array simply by passing start as 0
 	public boolean groupSum(int start, int[] nums, int target) {
 		
-		if (start >= nums.length) {
-			if (target == 0) {
-				return true;
-			}
-			else {
-				return false;
-			}
-		}
-		
-		// chosen
-		if (groupSum(start + 1, nums, target - nums[start])) {
-			return true;
-		}
-		
-		// not chosen
-		if (groupSum(start + 1, nums, target)) {
-			return true;
-		}
-		
-		return false;
+    if (start >= nums.length) {
+    	return target == 0;
+	} else {
+		// use item at start or not
+		return groupSum(start + 1, nums, target - nums[start]) || groupSum(start + 1, nums, target);
+	}
 		
 	}
 	

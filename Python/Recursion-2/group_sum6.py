@@ -4,15 +4,13 @@
 def group_sum6(start, nums, target):
     if start >= len(nums):
         return target == 0
-
-    # chosen
-    if group_sum6(start + 1, nums, target - nums[start]):
-        return True
-    # not chosen
-    if nums[start] != 6 and group_sum6(start + 1, nums, target):
-        return True
-
-    return False
+    else:
+        # all 6's must be chosen
+        if nums[start] == 6:
+            return group_sum6(start + 1, nums, target - nums[start])
+        else:
+            # use item at start or not
+            return group_sum6(start + 1, nums, target - nums[start]) or group_sum6(start + 1, nums, target)
 
 print(group_sum6(0, [2, 4, 8], 8))
 print(group_sum6(0, [2, 4, 8], 9))

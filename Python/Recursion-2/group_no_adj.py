@@ -4,15 +4,9 @@
 def group_no_adj(start, nums, target):
     if start >= len(nums):
         return target == 0
-    
-    # chosen
-    if group_no_adj(start + 2, nums, target - nums[start]):
-        return True
-    # not chosen
-    if group_no_adj(start + 1, nums, target):
-        return True
-
-    return False
+    else:
+        # use item at start + skip next item or not use item at start
+        return group_no_adj(start + 2, nums, target - nums[start]) or group_no_adj(start + 1, nums, target)
 
 print(group_no_adj(0, [2, 4, 8], 10))
 print(group_no_adj(0, [2, 4, 8], 14))
