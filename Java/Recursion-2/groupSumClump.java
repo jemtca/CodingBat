@@ -8,7 +8,21 @@ public class recursion2 {
 	// (one loop can be used to find the extent of the identical values)
 	public boolean groupSumClump(int start, int[] nums, int target) {
 	
-        
+        if (start >= nums.length) {
+			return target == 0;
+		}
+		else {
+			int end = start;
+			
+			while(end < nums.length && nums[end] == nums[start]) {
+				end++;
+			}
+			
+			int length = end - start;			
+			
+            // use item at end (new start) or not
+			return groupSumClump(end, nums, target - nums[start] * length) || groupSumClump(end, nums, target);
+		}
 		
 	}
 	
