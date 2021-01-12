@@ -1,5 +1,6 @@
 
-// given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!"
+// given a string name
+// e.g. 'Bob', return a greeting of the form 'Hello Bob!'
 const helloName = (name) => {
     return `Hello ${name}!`
 };
