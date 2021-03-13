@@ -1,6 +1,6 @@
 
 // given a string of even length, return the first half
-// so the string "WooHoo" yields "Woo"
+// so the string 'WooHoo' yields 'Woo'
 const firstHalf = (str) => {
     return str.substring(0, str.length / 2);
 };
