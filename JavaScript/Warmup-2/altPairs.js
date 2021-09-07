@@ -1,7 +1,6 @@
 
-// given a string, return a string made of the chars at indexes 0,1, 4,5, 8,9 ... so "kittens" yields "kien"
+// given a string, return a string made of the chars at indexes 0,1, 4,5, 8,9 ... so 'kittens' yields 'kien'
 const altPairs = (str) => {
-
     let newStr = '';
 
     for (let i = 0; i < str.length; i = i + 4) {
@@ -15,7 +14,6 @@ const altPairs = (str) => {
     }
 
     return newStr;
-
 };
 
 console.log(altPairs('kitten'));

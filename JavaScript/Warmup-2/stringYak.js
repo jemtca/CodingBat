@@ -1,9 +1,8 @@
 
-// suppose the string "yak" is unlucky
-// given a string, return a version where all the "yak" are removed, but the "a" can be any char
-// the "yak" strings will not overlap
+// suppose the string 'yak' is unlucky
+// given a string, return a version where all the 'yak' are removed, but the 'a' can be any char
+// the 'yak' strings will not overlap
 const stringYak = (str) => {
-
     let newStr = '';
 
     if (str.length > 2) {
@@ -19,7 +18,6 @@ const stringYak = (str) => {
     }
 
     return newStr;
-
 };
 
 console.log(stringYak('yakpak'));

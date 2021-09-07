@@ -1,7 +1,6 @@
 
-// given a string, return true if the first instance of "x" in the string is immediately followed by another "x"
+// given a string, return true if the first instance of 'x' in the string is immediately followed by another 'x'
 const doubleX = (str) => {
-
 	let bool = false;
 	let found = false;
 
@@ -15,7 +14,6 @@ const doubleX = (str) => {
 	}
 
 	return bool;
-
 };
 
 console.log(doubleX('axxbb'));

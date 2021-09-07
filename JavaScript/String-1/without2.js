@@ -5,7 +5,7 @@
 // so 'Hi' yields '
 // otherwise, return the original string unchanged
 const without2 = (str) => {
-	if (str.length > 1 && (str.substring(0, 2) === str.substring(str.length - 2, str.length)) {
+	if (str.length > 1 && (str.substring(0, 2) === str.substring(str.length - 2, str.length))) {
 		str = str.substring(2);
 	}
 

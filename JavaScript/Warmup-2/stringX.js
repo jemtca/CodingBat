@@ -1,8 +1,7 @@
 
-// given a string, return a version where all the "x" have been removed
-// except an "x" at the very start or end should not be removed
+// given a string, return a version where all the 'x' have been removed
+// except an 'x' at the very start or end should not be removed
 const stringX = (str) => {
-
     let newMiddleString = '';
     
     if (str.length > 1) {
@@ -15,7 +14,6 @@ const stringX = (str) => {
     } else {
         return str;
     }
-
 };
 
 console.log(stringX('xxHxix'));

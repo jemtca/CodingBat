@@ -15,7 +15,7 @@ const front11 = (a, b) => {
         newArray.push(b[0]);
     }
 
-        return newArray;
+    return newArray;
 };
 
 console.log(front11([1, 2, 3], [7, 9, 8]));

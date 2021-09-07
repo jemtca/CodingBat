@@ -10,7 +10,7 @@ const everyNth = (str, n) => {
     }
 
     return newStr;
-}
+};
 
 console.log(everyNth("Miracle", 2));
 console.log(everyNth("abcdefg", 2));

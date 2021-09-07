@@ -2,7 +2,6 @@
 // given an array of ints, return true if one of the first 4 elements in the array is a 9
 // the array length may be less than 4
 const arrayFront9 = (nums) => {
-
     let answer = false;
     let found = false;
 
@@ -14,7 +13,6 @@ const arrayFront9 = (nums) => {
     }
 
     return answer;
-
 };
 
 console.log(arrayFront9([1, 2, 9, 3, 4]));

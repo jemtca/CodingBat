@@ -4,7 +4,7 @@
 // given tag and word strings, create the HTML string with tags around the word
 // e.g. '<i>Yay</i>'
 const makeTags = (tag, word) => {
-    return `<${tag}>${word}</${tag}>`
+    return `<${tag}>${word}</${tag}>`;
 };
 
 console.log(makeTags('i', 'Yay'));

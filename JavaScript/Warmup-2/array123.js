@@ -1,7 +1,6 @@
 
 // given an array of ints, return true if the sequence of numbers 1, 2, 3 appears in the array somewhere
 const array123 = (nums) => {
-
     let found = false;
 
     for (let i = 0; i < nums.length - 2 && !found; i++) {
@@ -11,7 +10,6 @@ const array123 = (nums) => {
     }
 
     return found;
-
 };
 
 console.log(array123([1, 1, 2, 3, 1]));

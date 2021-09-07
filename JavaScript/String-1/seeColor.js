@@ -2,7 +2,6 @@
 // given a string, if the string begins with 'red' or 'blue' return that color string
 // otherwise return the empty string
 const seeColor = (str) => {
-    
     if (str.startsWith('red')) {
         return 'red';
     } else if (str.startsWith('blue')) {
@@ -10,7 +9,6 @@ const seeColor = (str) => {
     } else {
         return '';
     }
-
 };
 
 console.log(seeColor('redxx'));
